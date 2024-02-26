@@ -1,0 +1,8 @@
+.addFood{
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+.addFood button, .addFood input{
+    padding: 5px;
+}

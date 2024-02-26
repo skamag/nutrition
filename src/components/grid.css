@@ -1,0 +1,13 @@
+.main-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 100%;
+}
+.foods-table{
+    border: 1px solid grey;
+}
+.foods-table td{
+    background-color: rgb(230, 230, 230);
+    padding: 0 3px;
+}
