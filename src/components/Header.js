@@ -6,7 +6,7 @@ export default function Header() {
         <div className='header-container'>
             <div className='logo'>
                 <img className='logo-img' src={logoImg} alt='logoImg'></img>
-                <h1 className='logo-text'>Logo-tekst</h1>
+                <h2 className='logo-text'>Matvareinnholdskalkulator</h2>
             </div>
         </div>
     )

@@ -17,8 +17,7 @@ function App() {
   }
 
   function handleRemove(name) {
-    // setAddedList((addedList) => addedList.filter((item) => item.name !== name))
-    console.log(name)
+    setAddedList((addedList) => addedList.filter((item) => item !== name))
   }
 
   // useEffect(() => {

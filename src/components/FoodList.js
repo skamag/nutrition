@@ -7,7 +7,9 @@ export default function FoodList({ addedList, handleRemove }) {
                 {addedList.map((item) => (
                     <li key={item}>
                         <span>{item}</span>
-                        <button onClick={() => handleRemove(item.name)}>❌</button>
+                        <button onClick={() => {
+                            handleRemove(item)
+                        }}>❌</button>
                     </li>
                 ))}
             </ul>

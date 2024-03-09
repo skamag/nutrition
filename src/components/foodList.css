@@ -5,3 +5,6 @@ li{
     display: flex;
     justify-content: space-between;
 }
+button{
+    font-size: 10px;
+}
