@@ -11,9 +11,9 @@
     height: fit-content;
 }
 .tableContainer{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(225, 225, 225);
     border-radius: 10px;
-    box-shadow: 0 0 8px rgb(223, 223, 223);
+    box-shadow: 0 0 8px rgb(225, 225, 225);
 }
 .tableHeader{
     padding: 10px;

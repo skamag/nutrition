@@ -9,9 +9,13 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    color: rgb(50, 50, 50);
 }
 .logo-img{
     height: 90%;
-
+}
+.logo-text{
+    background: linear-gradient(to right, #587e7e, #89577f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

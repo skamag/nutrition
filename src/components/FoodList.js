@@ -9,7 +9,7 @@ export default function FoodList({ addedList, handleRemove }) {
                         <span>{item}</span>
                         <button onClick={() => {
                             handleRemove(item)
-                        }}>❌</button>
+                        }}>✖️</button>
                     </li>
                 ))}
             </ul>

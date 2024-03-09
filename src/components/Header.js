@@ -1,4 +1,4 @@
-import logoImg from '../images/carrot.jpeg'
+import logoImg from '../images/bananaTransparent.png'
 import './header.css'
 
 export default function Header() {
