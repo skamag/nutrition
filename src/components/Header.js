@@ -1,10 +1,12 @@
+import logoImg from '../images/carrot.jpeg'
 import './header.css'
 
 export default function Header() {
     return(
         <div className='header-container'>
             <div className='logo'>
-                <h1 className='logo-text'>Logo</h1>
+                <img className='logo-img' src={logoImg} alt='logoImg'></img>
+                <h1 className='logo-text'>Logo-tekst</h1>
             </div>
         </div>
     )

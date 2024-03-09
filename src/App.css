@@ -7,4 +7,5 @@ main{
   justify-content: space-between;
   padding: 0 100px;
   gap: 100px;
+  color: rgb(50, 50, 50);
 }

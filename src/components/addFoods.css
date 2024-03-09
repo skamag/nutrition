@@ -1,3 +1,6 @@
+.addFoodContainer{
+    font-size: 14px;
+}
 .addFood{
     display: flex;
     align-items: start;
@@ -5,4 +8,14 @@
 }
 .addFood button, .addFood input{
     padding: 5px;
+}
+.searchResults{
+    background-color: white;
+    margin: 2px;
+    position: absolute;
+    box-shadow: 0 0 8px grey;
+}
+.suggestion{
+    padding: 5px 20px;
+    cursor: pointer;
 }

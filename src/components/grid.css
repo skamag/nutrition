@@ -1,13 +1,36 @@
-.main-grid{
+.gridContainer{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.grid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 20px;
     width: 100%;
+    height: fit-content;
 }
 .foods-table{
-    border: 1px solid grey;
+    height: fit-content;
+    box-shadow: 0 0 8px rgb(223, 223, 223);
+    border-spacing: 0;
+    border-radius: 10px;
+
 }
 .foods-table td{
-    background-color: rgb(230, 230, 230);
     padding: 0 3px;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    padding: 10px;
+}
+.right-cell{
+    display: flex;
+    justify-content: end;
+}
+.subList{
+    padding-left: 20px;
+}
+.subSubList{
+    padding-left: 40px;
 }

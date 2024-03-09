@@ -3,3 +3,14 @@
     margin-bottom: 20px;
     padding: 20px 100px;
 }
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.logo-img{
+    height: 90%;
+
+}
