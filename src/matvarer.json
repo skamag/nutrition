@@ -15,12 +15,12 @@
                         "monounsaturated": 10,
                         "polyunsaturated":[
                             {
-                                "omega-3": 2,
-                                "omega-6": 1
+                                "omega3": 2,
+                                "omega6": 1
                             }
                         ],
                         "saturated": 30,
-                        "trans-fats": 30
+                        "transFats": 30
                     }
                 ],
                 "cholesterol": 0.01  
