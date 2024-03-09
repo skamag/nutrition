@@ -8,7 +8,6 @@ export default function AddFoods({ handleAddFood, matvarer }) {
         e.preventDefault()
     }
     function handleClick(e) {
-        console.log(e)
         const newFood = e
         
         handleAddFood(newFood)
@@ -22,7 +21,7 @@ export default function AddFoods({ handleAddFood, matvarer }) {
     return(
         <div className='addFoodContainer'>
             <form className='leggTilForm' onSubmit={handleSubmit}>
-                <label htmlFor='food'>Legg til matvarer</label>
+                {/* <label htmlFor='food'>Legg til matvarer</label> */}
                 <div className='addFood'>
                     <input 
                         onChange={(e) => setInputText(e.target.value)} 
@@ -35,7 +34,7 @@ export default function AddFoods({ handleAddFood, matvarer }) {
                 </div>
             </form>
             <div className='searchResults'>
-                {inputText != '' && matvarer.map(matvare => <div className='suggestion' onClick={() => handleClick(matvare.name)} key={matvare.name}>{matvare.name}</div>)}
+                {inputText != '' && matvarer.map(matvare => <div className='suggestion' onClick={() => handleClick(matvare)} key={matvare.name}>{matvare.name}</div>)}
             </div>
         </div>
     )

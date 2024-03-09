@@ -36,3 +36,9 @@
     display: flex;
     justify-content: end;
 }
+@media screen and (max-width: 800px){
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}

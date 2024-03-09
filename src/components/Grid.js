@@ -1,6 +1,6 @@
 import './grid.css'
 
-export default function Grid() {
+export default function Grid({ fiber, setFiber, stivelse, setStivelse, sukker, setSukker }) {
     return(
         <div className='gridContainer'>
             <div className="grid">
@@ -10,15 +10,15 @@ export default function Grid() {
                         <tbody>
                             <tr>
                                 <td>Fiber</td>
-                                <td className='right-cell'>0</td>
+                                <td className='right-cell'>{fiber}</td>
                             </tr>
                             <tr>
                                 <td>Stivelse</td>
-                                <td className='right-cell'>0</td>
+                                <td className='right-cell'>{stivelse}</td>
                             </tr>
                             <tr>
                                 <td>Sukker</td>
-                                <td className='right-cell'>0</td>
+                                <td className='right-cell'>{sukker}</td>
                             </tr>
                         </tbody>
                     </table>

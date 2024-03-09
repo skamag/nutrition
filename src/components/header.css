@@ -1,6 +1,5 @@
 .header-container{
-    border-bottom: 1px solid rgb(237, 237, 237);
-    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(225, 225, 225);
     padding: 20px 100px;
 }
 .logo{
@@ -13,9 +12,26 @@
 .logo-img{
     height: 90%;
 }
+.main-logo-text{
+    display: block;
+}
+.alternate-logo-text{
+    display: none;
+}
 .logo-text{
     background: linear-gradient(to right, #587e7e, #89577f);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 600px){
+    .header-container{
+        padding: 20px 50px;
+    }
+    .logo-text{
+        display: none;
+    }
+    .alternate-logo-text{
+        display: block;
+    }
 }

@@ -2,20 +2,33 @@
     font-size: 14px;
 }
 .addFood{
-    display: flex;
-    align-items: start;
-    gap: 5px;
+    border: 2px solid rgb(225, 225, 225);
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: rgb(250, 250, 250);
 }
 .addFood button, .addFood input{
     padding: 5px;
 }
+.addFood input{
+    border: none;
+    background-color: rgb(250, 250, 250);
+}
+.addFood input:focus{
+    outline: none;
+}
 .searchResults{
     background-color: white;
     margin: 2px;
-    position: absolute;
-    box-shadow: 0 0 8px grey;
+    box-shadow: 0 0 8px rgb(225, 225, 225);
+    border-radius: 5px;
 }
 .suggestion{
     padding: 5px 20px;
     cursor: pointer;
+}
+@media screen and (max-width: 600px){
+    .addFood input{
+        width: 100%;
+    }
 }
