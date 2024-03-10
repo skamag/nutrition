@@ -19,7 +19,8 @@
     display: none;
 }
 .logo-text{
-    background: linear-gradient(to right, #587e7e, #89577f);
+    /* background: linear-gradient(to right, #587e7e, #89577f); */
+    background: linear-gradient(to right, #576969, #715d6d);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

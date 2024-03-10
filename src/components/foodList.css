@@ -1,12 +1,15 @@
 .list{
     padding: 10px;
 }
-li{
+.display-block{
     font-size: 14px;
     list-style-type: none;
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
+}
+.display-none{
+    display: none;
 }
 button{
     font-size: 10px;

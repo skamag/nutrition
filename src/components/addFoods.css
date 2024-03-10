@@ -5,14 +5,14 @@
     border: 2px solid rgb(225, 225, 225);
     padding: 5px 10px;
     border-radius: 25px;
-    background-color: rgb(250, 250, 250);
+    background-color: white;
+    display: flex;
 }
 .addFood button, .addFood input{
     padding: 5px;
 }
 .addFood input{
     border: none;
-    background-color: rgb(250, 250, 250);
 }
 .addFood input:focus{
     outline: none;

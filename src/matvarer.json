@@ -1,6 +1,7 @@
 [
     {
-        "name":"Eple",
+        "id": 0,
+        "name": "Eple",
         "carbohydrates":[
             {
                 "fiber": 10,
@@ -73,10 +74,11 @@
         ]
     },
     {
+        "id": 1,
         "name":"Melk",
-        "karbohydrates":[
+        "carbohydrates":[
             {
-                "fiber": 0.1,
+                "fiber": 1,
                 "starch": 0.1,
                 "sugars": 3
             }
@@ -88,12 +90,160 @@
                         "monounsaturated": 1,
                         "polyunsaturated":[
                             {
-                                "omega-3": 0.1,
-                                "omega-6": 0.2
+                                "omega3": 0.1,
+                                "omega6": 0.2
                             }
                         ],
                         "saturated": 4,
-                        "trans-fats": 0.1
+                        "transFats": 0.1
+                    }
+                ],
+                "cholesterol": 0.02  
+            }
+        ],
+        "protein":[
+            {
+                "cystine": 2,
+                "histidine": 45,
+                "isoleucine": 20,
+                "leucine": 4,
+                "lysine": 5,
+                "methionine": 9,
+                "phenylalanine": 17,
+                "threonine": 12,
+                "tryptophan": 13,
+                "tyrosine": 14,
+                "valine": 15
+            }
+        ],
+        "vitamins":[
+            {
+                "b1": 5,
+                "b2": 26,
+                "b3": 2,
+                "b5": 12,
+                "b6": 4,
+                "b12": 13,
+                "folate": 2,
+                "vitamin_a": 1,
+                "vitamin_c": 0.1,
+                "vitamin_d": 5,
+                "vitamin_e": 2,
+                "vitamin_k": 1
+            }
+        ],
+        "minerals":[
+            {
+                "calcium": 10,
+                "copper": 5,
+                "iron": 30,
+                "magnesium": 10,
+                "manganese": 5,
+                "phosphorus": 30,
+                "potassium": 10,
+                "selenium": 5,
+                "sodium": 30,
+                "zinc": 10
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name":"Potet",
+        "carbohydrates":[
+            {
+                "fiber": 1,
+                "starch": 0.1,
+                "sugars": 3
+            }
+        ],                      
+        "lipids":[
+            {
+                "fat":[
+                    {
+                        "monounsaturated": 1,
+                        "polyunsaturated":[
+                            {
+                                "omega3": 0.1,
+                                "omega6": 0.2
+                            }
+                        ],
+                        "saturated": 4,
+                        "transFats": 0.1
+                    }
+                ],
+                "cholesterol": 0.02  
+            }
+        ],
+        "protein":[
+            {
+                "cystine": 2,
+                "histidine": 45,
+                "isoleucine": 20,
+                "leucine": 4,
+                "lysine": 5,
+                "methionine": 9,
+                "phenylalanine": 17,
+                "threonine": 12,
+                "tryptophan": 13,
+                "tyrosine": 14,
+                "valine": 15
+            }
+        ],
+        "vitamins":[
+            {
+                "b1": 5,
+                "b2": 26,
+                "b3": 2,
+                "b5": 12,
+                "b6": 4,
+                "b12": 13,
+                "folate": 2,
+                "vitamin_a": 1,
+                "vitamin_c": 0.1,
+                "vitamin_d": 5,
+                "vitamin_e": 2,
+                "vitamin_k": 1
+            }
+        ],
+        "minerals":[
+            {
+                "calcium": 10,
+                "copper": 5,
+                "iron": 30,
+                "magnesium": 10,
+                "manganese": 5,
+                "phosphorus": 30,
+                "potassium": 10,
+                "selenium": 5,
+                "sodium": 30,
+                "zinc": 10
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name":"Tomatsuppe",
+        "carbohydrates":[
+            {
+                "fiber": 1,
+                "starch": 0.1,
+                "sugars": 3
+            }
+        ],                      
+        "lipids":[
+            {
+                "fat":[
+                    {
+                        "monounsaturated": 1,
+                        "polyunsaturated":[
+                            {
+                                "omega3": 0.1,
+                                "omega6": 0.2
+                            }
+                        ],
+                        "saturated": 4,
+                        "transFats": 0.1
                     }
                 ],
                 "cholesterol": 0.02  

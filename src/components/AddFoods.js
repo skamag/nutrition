@@ -7,15 +7,10 @@ export default function AddFoods({ handleAddFood, matvarer }) {
     function handleSubmit(e) {
         e.preventDefault()
     }
-    function handleClick(e) {
-        const newFood = e
-        
-        handleAddFood(newFood)
+    function handleClick(e) {        
+        handleAddFood(e)
 
         setInputText('')
-
-        // setAddedList(addedList => [...addedList, newFood])
-        // console.log(addedList)
     }
 
     return(
@@ -34,7 +29,7 @@ export default function AddFoods({ handleAddFood, matvarer }) {
                 </div>
             </form>
             <div className='searchResults'>
-                {inputText != '' && matvarer.map(matvare => <div className='suggestion' onClick={() => handleClick(matvare)} key={matvare.name}>{matvare.name}</div>)}
+                {inputText !== '' && matvarer.map(matvare => <div className='suggestion' onClick={() => handleClick(matvare)} key={matvare.name}>{matvare.name}</div>)}
             </div>
         </div>
     )
