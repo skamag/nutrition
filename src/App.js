@@ -1,9 +1,10 @@
 import matvarer from './matvarer.json'
 import { useState } from 'react'
 import Header from './components/Header'
-import AddFoods from './components/AddFoods';
+import AddFoods from './components/AddFoods'
 import Grid from './components/Grid'
-import FoodList from './components/FoodList';
+import FoodList from './components/FoodList'
+import Footer from './components/Footer'
 import './App.css';
 
 function App() {
@@ -225,6 +226,7 @@ function App() {
           sink={sink}
         />
       </main>
+      <Footer />
     </div>
   );
 }

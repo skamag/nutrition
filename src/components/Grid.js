@@ -82,6 +82,14 @@ export default function Grid({
                                 <td style={{paddingLeft: '20px'}}>Flerumettet</td>
                                 <td className='right-cell'></td>
                             </tr> */}
+                            <tr>
+                                <td>Kolesterol</td>
+                                <td className='right-cell'>{kolesterol.toFixed(2).replace(/\.00$/, '')}</td>
+                            </tr>
+                            <tr className='subList'>
+                                <td style={{paddingLeft: '10px'}}>Mettet fett</td>
+                                <td className='right-cell'>{mettet.toFixed(2).replace(/\.00$/, '')}</td>
+                            </tr>
                             <tr className='subSubList'>
                                 <td style={{paddingLeft: '10px'}}>Omega-3</td>
                                 <td className='right-cell'>{omega3.toFixed(2).replace(/\.00$/, '')}</td>
@@ -91,16 +99,8 @@ export default function Grid({
                                 <td className='right-cell'>{omega6.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr className='subList'>
-                                <td style={{paddingLeft: '10px'}}>Mettet fett</td>
-                                <td className='right-cell'>{mettet.toFixed(2).replace(/\.00$/, '')}</td>
-                            </tr>
-                            <tr className='subList'>
                                 <td style={{paddingLeft: '10px'}}>Transfett</td>
                                 <td className='right-cell'>{transfett.toFixed(2).replace(/\.00$/, '')}</td>
-                            </tr>
-                            <tr>
-                                <td>Kolesterol</td>
-                                <td className='right-cell'>{kolesterol.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -112,6 +112,10 @@ export default function Grid({
                             <tr>
                                 <td>Cystin</td>
                                 <td className='right-cell'>{cystin.toFixed(2).replace(/\.00$/, '')}</td>
+                            </tr>
+                            <tr>
+                                <td>Fenylalanin</td>
+                                <td className='right-cell'>{fenylalanin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
                                 <td>Histidin</td>
@@ -132,10 +136,6 @@ export default function Grid({
                             <tr>
                                 <td>Metionin</td>
                                 <td className='right-cell'>{metionin.toFixed(2).replace(/\.00$/, '')}</td>
-                            </tr>
-                            <tr>
-                                <td>Fenylalanin</td>
-                                <td className='right-cell'>{fenylalanin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
                                 <td>Trenonin</td>
@@ -191,23 +191,23 @@ export default function Grid({
                                 <td className='right-cell'>{folsyre.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
-                                <td>A-vitamin</td>
+                                <td>Vitamin A</td>
                                 <td className='right-cell'>{aVitamin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
-                                <td>C-vitamin</td>
+                                <td>Vitamin C</td>
                                 <td className='right-cell'>{cVitamin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
-                                <td>D-vitamin</td>
+                                <td>Vitamin D</td>
                                 <td className='right-cell'>{dVitamin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
-                                <td>E-vitamin</td>
+                                <td>Vitamin E</td>
                                 <td className='right-cell'>{eVitamin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
-                                <td>K-vitamin</td>
+                                <td>Vitamin K</td>
                                 <td className='right-cell'>{kVitamin.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                         </tbody>
@@ -218,16 +218,24 @@ export default function Grid({
                     <table className="foods-table">
                         <tbody>
                             <tr>
+                                <td>Fosfor</td>
+                                <td className='right-cell'>{fosfor.toFixed(2).replace(/\.00$/, '')}</td>
+                            </tr>
+                            <tr>
+                                <td>Jern</td>
+                                <td className='right-cell'>{jern.toFixed(2).replace(/\.00$/, '')}</td>
+                            </tr>
+                            <tr>
+                                <td>Kalium</td>
+                                <td className='right-cell'>{kalium.toFixed(2).replace(/\.00$/, '')}</td>
+                            </tr>
+                            <tr>
                                 <td>Kalsium</td>
                                 <td className='right-cell'>{kalsium.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
                                 <td>Kobber</td>
                                 <td className='right-cell'>{kobber.toFixed(2).replace(/\.00$/, '')}</td>
-                            </tr>
-                            <tr>
-                                <td>Jern</td>
-                                <td className='right-cell'>{jern.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
                                 <td>Magnesium</td>
@@ -238,20 +246,12 @@ export default function Grid({
                                 <td className='right-cell'>{mangan.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
-                                <td>Fosfor</td>
-                                <td className='right-cell'>{fosfor.toFixed(2).replace(/\.00$/, '')}</td>
-                            </tr>
-                            <tr>
-                                <td>Kalium</td>
-                                <td className='right-cell'>{kalium.toFixed(2).replace(/\.00$/, '')}</td>
+                                <td>Natrium</td>
+                                <td className='right-cell'>{natrium.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
                                 <td>Selen</td>
                                 <td className='right-cell'>{selen.toFixed(2).replace(/\.00$/, '')}</td>
-                            </tr>
-                            <tr>
-                                <td>Natrium</td>
-                                <td className='right-cell'>{natrium.toFixed(2).replace(/\.00$/, '')}</td>
                             </tr>
                             <tr>
                                 <td>Sink</td>

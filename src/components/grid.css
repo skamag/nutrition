@@ -6,7 +6,7 @@
 .grid{
     display: grid;
     grid-template-columns: auto;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     height: fit-content;
 }
@@ -24,6 +24,7 @@
     border-spacing: 0;
     border-radius: 10px;
     background-color: white;
+    padding: 4px;
 }
 .foods-table td{
     padding: 0 3px;

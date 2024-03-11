@@ -1,0 +1,30 @@
+.footerContainer{
+    border-top: 1px solid rgb(225, 225, 225);
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.socialsContainer{
+    display: flex;
+}
+.fa-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #576969, #715d6d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.footerContainer p{
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
