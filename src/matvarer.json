@@ -75,7 +75,7 @@
     },
     {
         "id": 1,
-        "name":"Melk",
+        "name": "Melk",
         "carbohydrates":[
             {
                 "fiber": 1,
@@ -149,7 +149,7 @@
     },
     {
         "id": 2,
-        "name":"Potet",
+        "name": "Potet",
         "carbohydrates":[
             {
                 "fiber": 1,
@@ -223,7 +223,7 @@
     },
     {
         "id": 3,
-        "name":"Tomatsuppe",
+        "name": "Tomatsuppe",
         "carbohydrates":[
             {
                 "fiber": 1,

@@ -5,6 +5,7 @@ import AddFoods from './components/AddFoods'
 import Grid from './components/Grid'
 import FoodList from './components/FoodList'
 import Footer from './components/Footer'
+import Test from './components/Test'
 import './App.css';
 
 function App() {
@@ -227,6 +228,7 @@ function App() {
         />
       </main>
       <Footer />
+      <Test />
     </div>
   );
 }

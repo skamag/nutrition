@@ -7,6 +7,12 @@ export default function AddFoods({ handleAddFood, matvarer }) {
     function handleSubmit(e) {
         e.preventDefault()
     }
+
+    function handleSearch(inputText) {
+        // console.log(inputText)
+        setInputText(inputText)
+    }
+
     function handleClick(e) {        
         handleAddFood(e)
 
@@ -19,7 +25,9 @@ export default function AddFoods({ handleAddFood, matvarer }) {
                 {/* <label htmlFor='food'>Legg til matvarer</label> */}
                 <div className='addFood'>
                     <input 
-                        onChange={(e) => setInputText(e.target.value)} 
+                        onChange={(e) => {
+                            handleSearch(e.target.value)
+                        }}
                         type='text' 
                         placeholder='Søk etter vare...' 
                         id='food'
@@ -29,7 +37,19 @@ export default function AddFoods({ handleAddFood, matvarer }) {
                 </div>
             </form>
             <div className='searchResults'>
-                {inputText !== '' && matvarer.map(matvare => <div className='suggestion' onClick={() => handleClick(matvare)} key={matvare.name}>{matvare.name}</div>)}
+                {
+                    inputText !== '' &&
+                    matvarer.filter(matvare => (matvare.name.toLowerCase().includes(inputText.toLowerCase()))).map(filteredData => (
+                        <div
+                            className='suggestion' 
+                            onClick={() => {
+                                handleClick(filteredData)
+                            }}
+                            key={filteredData.name}>
+                                {filteredData.name}
+                            </div>
+                    ))
+                }
             </div>
         </div>
     )
