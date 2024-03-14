@@ -51,17 +51,29 @@ export default function Grid({
                     <h5 className='tableHeader'>Karbohydrater</h5>
                     <table className="foods-table">
                         <tbody>
-                            <tr>
-                                <td>Fiber</td>
-                                <td className='right-cell'>{Math.abs(fiber.toFixed(2).replace(/\.00$/, ''))}</td>
+                        <tr>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Fiber</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(fiber.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Stivelse</td>
-                                <td className='right-cell'>{Math.abs(stivelse.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Stivelse</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(stivelse.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Sukker</td>
-                                <td className='right-cell'>{Math.abs(sukker.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Sukker</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(sukker.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -75,32 +87,56 @@ export default function Grid({
                                 <td className='right-cell'></td>
                             </tr> */}
                             <tr>
-                                <td className='subList' style={{paddingLeft: '10px'}}>Enumettet fett</td>
-                                <td className='right-cell'>{Math.abs(enumettet.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Enumettet fett</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(enumettet.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             {/* <tr className='subList'>
                                 <td style={{paddingLeft: '20px'}}>Flerumettet</td>
                                 <td className='right-cell'></td>
                             </tr> */}
                             <tr>
-                                <td>Kolesterol</td>
-                                <td className='right-cell'>{Math.abs(kolesterol.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Kolesterol</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(kolesterol.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
-                            <tr className='subList'>
-                                <td style={{paddingLeft: '10px'}}>Mettet fett</td>
-                                <td className='right-cell'>{Math.abs(mettet.toFixed(2).replace(/\.00$/, ''))}</td>
+                            <tr>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Mettet fett</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(mettet.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
-                            <tr className='subSubList'>
-                                <td style={{paddingLeft: '10px'}}>Omega-3</td>
-                                <td className='right-cell'>{Math.abs(omega3.toFixed(2).replace(/\.00$/, ''))}</td>
+                            <tr>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Omega-3</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(omega3.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
-                            <tr className='subSubList'>
-                                <td style={{paddingLeft: '10px'}}>Omega-6</td>
-                                <td className='right-cell'>{Math.abs(omega6.toFixed(2).replace(/\.00$/, ''))}</td>
+                            <tr>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Omega-6</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(omega6.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
-                            <tr className='subList'>
-                                <td style={{paddingLeft: '10px'}}>Transfett</td>
-                                <td className='right-cell'>{Math.abs(transfett.toFixed(2).replace(/\.00$/, ''))}</td>
+                            <tr>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Transfett</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(transfett.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -110,48 +146,92 @@ export default function Grid({
                     <table className="foods-table">
                         <tbody>
                             <tr>
-                                <td>Cystin</td>
-                                <td className='right-cell'>{Math.abs(cystin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Cystin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(cystin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Fenylalanin</td>
-                                <td className='right-cell'>{Math.abs(fenylalanin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Fenylalanin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(fenylalanin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Histidin</td>
-                                <td className='right-cell'>{Math.abs(histidin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Histidin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(histidin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Isoleucin</td>
-                                <td className='right-cell'>{Math.abs(isoleucin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Isoleucin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(isoleucin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Leucin</td>
-                                <td className='right-cell'>{Math.abs(leucin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Leucin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(leucin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Lysin</td>
-                                <td className='right-cell'>{Math.abs(lysin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Lysin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(lysin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Metionin</td>
-                                <td className='right-cell'>{Math.abs(metionin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Metionin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(metionin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Trenonin</td>
-                                <td className='right-cell'>{Math.abs(treonin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Treonin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(treonin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Tryptofan</td>
-                                <td className='right-cell'>{Math.abs(tryptofan.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Tryptofan</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(tryptofan.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Tyrosin</td>
-                                <td className='right-cell'>{Math.abs(tyrosin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Tyrosin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(tyrosin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Valin</td>
-                                <td className='right-cell'>{Math.abs(valin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Valin</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(valin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -163,52 +243,100 @@ export default function Grid({
                     <table className="foods-table">
                         <tbody>
                             <tr>
-                                <td>B1</td>
-                                <td className='right-cell'>{Math.abs(b1.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>B1</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(b1.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>B2</td>
-                                <td className='right-cell'>{Math.abs(b2.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>B2</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(b2.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>B3</td>
-                                <td className='right-cell'>{Math.abs(b3.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>B3</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(b3.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>B5</td>
-                                <td className='right-cell'>{Math.abs(b5.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>B5</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(b5.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>B6</td>
-                                <td className='right-cell'>{Math.abs(b6.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>B6</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(b6.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>B12</td>
-                                <td className='right-cell'>{Math.abs(b12.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>B12</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(b12.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Folsyre</td>
-                                <td className='right-cell'>{Math.abs(folsyre.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Folsyre</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(folsyre.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Vitamin A</td>
-                                <td className='right-cell'>{Math.abs(aVitamin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Vitamin A</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(aVitamin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Vitamin C</td>
-                                <td className='right-cell'>{Math.abs(cVitamin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Vitamin C</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(cVitamin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Vitamin D</td>
-                                <td className='right-cell'>{Math.abs(dVitamin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Vitamin D</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(dVitamin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Vitamin E</td>
-                                <td className='right-cell'>{Math.abs(eVitamin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Vitamin E</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(eVitamin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Vitamin K</td>
-                                <td className='right-cell'>{Math.abs(kVitamin.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Vitamin K</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(kVitamin.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -218,44 +346,84 @@ export default function Grid({
                     <table className="foods-table">
                         <tbody>
                             <tr>
-                                <td>Fosfor</td>
-                                <td className='right-cell'>{Math.abs(fosfor.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Fosfor</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(fosfor.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Jern</td>
-                                <td className='right-cell'>{Math.abs(jern.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Jern</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(jern.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Kalium</td>
-                                <td className='right-cell'>{Math.abs(kalium.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Kalium</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(kalium.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Kalsium</td>
-                                <td className='right-cell'>{Math.abs(kalsium.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Kalsium</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(kalsium.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Kobber</td>
-                                <td className='right-cell'>{Math.abs(kobber.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>kobber</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(kobber.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Magnesium</td>
-                                <td className='right-cell'>{Math.abs(magnesium.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Magnesium</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(magnesium.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Mangan</td>
-                                <td className='right-cell'>{Math.abs(mangan.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Mangan</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(mangan.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Natrium</td>
-                                <td className='right-cell'>{Math.abs(natrium.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Natrium</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(natrium.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Selen</td>
-                                <td className='right-cell'>{Math.abs(selen.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Selen</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(selen.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Sink</td>
-                                <td className='right-cell'>{Math.abs(sink.toFixed(2).replace(/\.00$/, ''))}</td>
+                                <td className='tableCell'>
+                                    <div className='cellLeft'>Sink</div>
+                                    <div className='cellMid'>0%</div>
+                                    <div className='cellRight'>{Math.abs(sink.toFixed(2).replace(/\.00$/, ''))}</div>
+                                    <div className='percentageBar'></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

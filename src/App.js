@@ -1,5 +1,5 @@
 import matvarer from './matvarer.json'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import AddFoods from './components/AddFoods'
 import Grid from './components/Grid'
@@ -12,7 +12,7 @@ function App() {
   // const url = 'https://www.matvaretabellen.no/api/nb/foods.json'
 
   const [addedList, setAddedList] = useState([])
-
+  
   const [fiber, setFiber] = useState(0)
   const [stivelse, setStivelse] = useState(0)
   const [sukker, setSukker] = useState(0)
@@ -228,7 +228,7 @@ function App() {
         />
       </main>
       <Footer />
-      <Test />
+      {/* <Test /> */}
     </div>
   );
 }

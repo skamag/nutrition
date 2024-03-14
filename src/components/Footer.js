@@ -8,7 +8,7 @@ export default function Footer() {
                 <a href="https://github.com/skamag" className="fa fa-socials fa-github"> </a>
                 <a href="https://facebook.com/magne.svarverudskaro" className="fa fa-socials fa-facebook"> </a>
             </div>
-            <p><i className='fa fa-copyright'></i> 2024 Matvareinnholdskalkulator ASA</p>
+            <p className='companyName'><i className='fa fa-copyright'></i> 2024 Matvareinnholdskalkulator ASA</p>
         </div>
     )
 }
