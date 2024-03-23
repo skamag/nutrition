@@ -1,6 +1,8 @@
+import { useEffect } from 'react'
 import './grid.css'
 
 export default function Grid({
+        matvarer,
         fiber,
         stivelse,
         sukker,
@@ -44,6 +46,11 @@ export default function Grid({
         natrium,
         sink
     }) {
+
+    useEffect(() => {
+        console.log(matvarer[0].carbohydrates[1].fiber_recommended)
+    })
+
     return(
         <div className='gridContainer'>
             <div className="grid">
@@ -54,9 +61,16 @@ export default function Grid({
                         <tr>
                                 <td className='tableCell'>
                                     <div className='cellLeft'>Fiber</div>
-                                    <div className='cellMid'>0%</div>
+                                    <div className='cellMid'>{Math.abs((((fiber)/(matvarer[0].carbohydrates[1].fiber_recommended))*100).toFixed(2).replace(/\.00$/, ''))}%</div>
                                     <div className='cellRight'>{Math.abs(fiber.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div 
+                                        className='percentageBar perc-fiber' 
+                                        style={{
+                                            width: `${((fiber)/(matvarer[0].carbohydrates[1].fiber_recommended))*100}%`
+                                            
+                                        }}
+                                        // style={{width:`100%`}}
+                                    ></div>
                                 </td>
                             </tr>
                             <tr>
@@ -72,7 +86,7 @@ export default function Grid({
                                     <div className='cellLeft'>Sukker</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(sukker.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-200'></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -91,7 +105,7 @@ export default function Grid({
                                     <div className='cellLeft'>Enumettet fett</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(enumettet.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-25'></div>
                                 </td>
                             </tr>
                             {/* <tr className='subList'>
@@ -103,7 +117,7 @@ export default function Grid({
                                     <div className='cellLeft'>Kolesterol</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(kolesterol.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-100'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -150,7 +164,7 @@ export default function Grid({
                                     <div className='cellLeft'>Cystin</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(cystin.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-100'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -158,7 +172,7 @@ export default function Grid({
                                     <div className='cellLeft'>Fenylalanin</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(fenylalanin.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-25'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -166,7 +180,7 @@ export default function Grid({
                                     <div className='cellLeft'>Histidin</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(histidin.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-10'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -182,7 +196,7 @@ export default function Grid({
                                     <div className='cellLeft'>Leucin</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(leucin.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-10'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -247,7 +261,7 @@ export default function Grid({
                                     <div className='cellLeft'>B1</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(b1.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-10'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -263,7 +277,7 @@ export default function Grid({
                                     <div className='cellLeft'>B3</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(b3.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-100'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -279,7 +293,7 @@ export default function Grid({
                                     <div className='cellLeft'>B6</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(b6.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-200'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -350,7 +364,7 @@ export default function Grid({
                                     <div className='cellLeft'>Fosfor</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(fosfor.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-100'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -390,7 +404,7 @@ export default function Grid({
                                     <div className='cellLeft'>Magnesium</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(magnesium.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-100'></div>
                                 </td>
                             </tr>
                             <tr>
@@ -414,7 +428,7 @@ export default function Grid({
                                     <div className='cellLeft'>Selen</div>
                                     <div className='cellMid'>0%</div>
                                     <div className='cellRight'>{Math.abs(selen.toFixed(2).replace(/\.00$/, ''))}</div>
-                                    <div className='percentageBar'></div>
+                                    <div className='percentageBar perc-100'></div>
                                 </td>
                             </tr>
                             <tr>

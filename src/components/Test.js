@@ -1,8 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './test.css'
 
 export default function Test() {
     const url = 'https://kassal.app/api/v1/products'
+    const [matvarer, setMatvarer] = useState([])
     
     function fetchMatvareData() {
         fetch(url, {
@@ -11,14 +12,26 @@ export default function Test() {
             }
         })
         .then(res => res.json())
-        .then((data) => console.log(data))
+        .then((data) => {
+            let nyMatvare = data
+
+            setMatvarer(matvarer => [...matvarer, nyMatvare])
+            // console.log(matvarer.data[1].nutrition)
+        })
     }
 
     useEffect(() => {
         fetchMatvareData()
     }, [])
 
-    return(
-        <h1>{url}</h1>
-    )
+    // return(
+    //     <div>
+    //         {matvarer.map((matvare) => {
+    //             return(
+    //                 console.log(matvarer[0].data[0].nutrition)
+    //                 // <h1>{matvare}</h1>
+    //             )
+    //         })}
+    //     </div>
+    // )
 }

@@ -1,5 +1,5 @@
 import matvarer from './matvarer.json'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Header from './components/Header'
 import AddFoods from './components/AddFoods'
 import Grid from './components/Grid'
@@ -9,8 +9,6 @@ import Test from './components/Test'
 import './App.css';
 
 function App() {
-  // const url = 'https://www.matvaretabellen.no/api/nb/foods.json'
-
   const [addedList, setAddedList] = useState([])
   
   const [fiber, setFiber] = useState(0)
@@ -182,7 +180,8 @@ function App() {
           <AddFoods handleAddFood={handleAddFood} matvarer={matvarer} />
           <FoodList addedList={addedList} handleRemove={handleRemove} matvarer={matvarer} />
         </div>
-        <Grid 
+        <Grid
+          matvarer={matvarer}
           fiber={fiber} 
           stivelse={stivelse}
           sukker={sukker}
@@ -228,7 +227,7 @@ function App() {
         />
       </main>
       <Footer />
-      {/* <Test /> */}
+      <Test />
     </div>
   );
 }

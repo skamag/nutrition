@@ -35,12 +35,36 @@
 }
 .percentageBar{
     position: absolute;
-    background-color: lime;
     height: 100%;
     width: 50%;
     left: 0;
     top: 0;
     border-radius: 10px;
+    background-color: yellow;
+    opacity: 0;
+}
+.perc-fiber{
+    opacity: 1;
+}
+.perc-200{
+    width: 100%;
+    background-color: red;
+}
+.perc-100{
+    width: 100%;
+    background-color: rgb(87, 226, 87);
+}
+.perc-75{
+    width: 75%;
+    background-color: lime;
+}
+.perc-25{
+    width: 25%;
+    background-color: orange;
+}
+.perc10{
+    width: 10%;
+    background-color: red;
 }
 .tableCell{
     display: flex;

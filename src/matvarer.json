@@ -7,6 +7,11 @@
                 "fiber": 10,
                 "starch": 5,
                 "sugars": 40
+            },
+            {
+                "fiber_recommended": 40,
+                "recStarch_recommended": 30,
+                "recSugars_recommended": 40
             }
         ],                      
         "lipids":[
@@ -25,6 +30,22 @@
                     }
                 ],
                 "cholesterol": 0.01  
+            },
+            {
+                "fat_recommended":[
+                    {
+                        "monounsaturated_recommended": 10,
+                        "polyunsaturated_recommended":[
+                            {
+                                "omega3_recommended": 2,
+                                "omega6_recommended": 1
+                            }
+                        ],
+                        "saturated_recommended": 30,
+                        "transFats_recommended": 30
+                    }
+                ],
+                "cholesterol_recommended": 0.01  
             }
         ],
         "protein":[
@@ -40,6 +61,19 @@
                 "tryptophan": 30,
                 "tyrosine": 10,
                 "valine": 30
+            },
+            {
+                "cystine_recommended": 10,
+                "histidine_recommended": 5,
+                "isoleucine_recommended": 30,
+                "leucine_recommended": 10,
+                "lysine_recommended": 5,
+                "methionine_recommended": 30,
+                "phenylalanine_recommended": 10,
+                "threonine_recommended": 5,
+                "tryptophan_recommended": 30,
+                "tyrosine_recommended": 10,
+                "valine_recommended": 30
             }
         ],
         "vitamins":[
@@ -56,6 +90,20 @@
                 "vitamin_d": 5,
                 "vitamin_e": 5,
                 "vitamin_k": 5
+            },
+            {
+                "b1_recommended": 10,
+                "b2_recommended": 5,
+                "b3_recommended": 30,
+                "b5_recommended": 10,
+                "b6_recommended": 5,
+                "b12_recommended": 30,
+                "folate_recommended": 10,
+                "vitamin_a_recommended": 5,
+                "vitamin_c_recommended": 5,
+                "vitamin_d_recommended": 5,
+                "vitamin_e_recommended": 5,
+                "vitamin_k_recommended": 5
             }
         ],
         "minerals":[
@@ -70,6 +118,18 @@
                 "selenium": 5,
                 "sodium": 30,
                 "zinc": 10
+            },
+            {
+                "calcium_recommended": 10,
+                "copper_recommended": 5,
+                "iron_recommended": 30,
+                "magnesium_recommended": 10,
+                "manganese_recommended": 5,
+                "phosphorus_recommended": 30,
+                "potassium_recommended": 10,
+                "selenium_recommended": 5,
+                "sodium_recommended": 30,
+                "zinc_recommended": 10
             }
         ]
     },
@@ -81,6 +141,11 @@
                 "fiber": 1,
                 "starch": 0.1,
                 "sugars": 3
+            },
+            {
+                "fiber_recommended": 40,
+                "recStarch_recommended": 30,
+                "recSugars_recommended": 40
             }
         ],                      
         "lipids":[
@@ -99,6 +164,22 @@
                     }
                 ],
                 "cholesterol": 0.02  
+            },
+            {
+                "fat_recommended":[
+                    {
+                        "monounsaturated_recommended": 10,
+                        "polyunsaturated_recommended":[
+                            {
+                                "omega3_recommended": 2,
+                                "omega6_recommended": 1
+                            }
+                        ],
+                        "saturated_recommended": 30,
+                        "transFats_recommended": 30
+                    }
+                ],
+                "cholesterol_recommended": 0.01  
             }
         ],
         "protein":[
@@ -114,6 +195,19 @@
                 "tryptophan": 13,
                 "tyrosine": 14,
                 "valine": 15
+            },
+            {
+                "cystine_recommended": 2,
+                "histidine_recommended": 45,
+                "isoleucine_recommended": 20,
+                "leucine_recommended": 4,
+                "lysine_recommended": 5,
+                "methionine_recommended": 9,
+                "phenylalanine_recommended": 17,
+                "threonine_recommended": 12,
+                "tryptophan_recommended": 13,
+                "tyrosine_recommended": 14,
+                "valine_recommended": 15
             }
         ],
         "vitamins":[
@@ -130,6 +224,20 @@
                 "vitamin_d": 5,
                 "vitamin_e": 2,
                 "vitamin_k": 1
+            },
+            {
+                "b1_recommended": 5,
+                "b2_recommended": 26,
+                "b3_recommended": 2,
+                "b5_recommended": 12,
+                "b6_recommended": 4,
+                "b12_recommended": 13,
+                "folate_recommended": 2,
+                "vitamin_a_recommended": 1,
+                "vitamin_c_recommended": 0.1,
+                "vitamin_d_recommended": 5,
+                "vitamin_e_recommended": 2,
+                "vitamin_k_recommended": 1
             }
         ],
         "minerals":[
@@ -144,6 +252,18 @@
                 "selenium": 5,
                 "sodium": 30,
                 "zinc": 10
+            },
+            {
+                "calcium_recommended": 10,
+                "copper_recommended": 5,
+                "iron_recommended": 30,
+                "magnesium_recommended": 10,
+                "manganese_recommended": 5,
+                "phosphorus_recommended": 30,
+                "potassium_recommended": 10,
+                "selenium_recommended": 5,
+                "sodium_recommended": 30,
+                "zinc_recommended": 10
             }
         ]
     },
